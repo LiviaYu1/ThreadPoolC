@@ -1,0 +1,16 @@
+﻿  正在验证源
+  正在将源远程复制到“120.79.224.46”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  threadpool.cpp
+  正在链接对象
+/usr/bin/ld : error : /root/projects/ThreadPool/obj/x64/Debug/threadpool.o: in function `threadPoolCreate(int, int, int)':
+C:\Users\Livia\Desktop\github\ThreadPool\ThreadPool\threadpool.cpp(84): error : undefined reference to `pthread_create'
+/usr/bin/ld : error : /root/projects/ThreadPool/threadpool.cpp:88: undefined reference to `pthread_create'
+/usr/bin/ld : error : /root/projects/ThreadPool/obj/x64/Debug/threadpool.o: in function `threadPoolDestroy(ThreadPool*)':
+C:\Users\Livia\Desktop\github\ThreadPool\ThreadPool\threadpool.cpp(110): error : undefined reference to `pthread_join'
+/usr/bin/ld : error : /root/projects/ThreadPool/obj/x64/Debug/threadpool.o: in function `manager(void*)':
+C:\Users\Livia\Desktop\github\ThreadPool\ThreadPool\threadpool.cpp(268): error : undefined reference to `pthread_create'
+collect2 : error : ld returned 1 exit status
